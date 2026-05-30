@@ -1,0 +1,14 @@
+{
+  "servers": {
+    "resource-mcp": {
+      "command": "node",
+      "args": ["--experimental-strip-types", "./src/index.ts"],
+      "env": {
+        "BASE_URL": "http://localhost:9999/v1",
+        "SERVICE_TOKEN": "<paste-your-service-token-here>",
+        "RATE_LIMIT_BURST": "20",
+        "RATE_LIMIT_PER_SEC": "5"
+      }
+    }
+  }
+}

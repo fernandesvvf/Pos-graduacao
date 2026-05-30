@@ -1,0 +1,29 @@
+{
+  "name": "@you/resource-mcp",
+  "version": "0.0.1",
+  "description": "MCP server template (api-crud preset) — layered architecture + bearer auth + client-side rate limiting",
+  "type": "module",
+  "bin": {
+    "resource-mcp": "./src/index.ts"
+  },
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "start": "node src/index.ts",
+    "dev": "node --watch --inspect src/index.ts",
+    "test": "node --test tests/**/*.test.ts",
+    "test:dev": "node --inspect --test --watch tests/**/*.test.ts",
+    "mcp:inspect": "npx @modelcontextprotocol/inspector node src/index.ts"
+  },
+  "keywords": ["mcp", "model-context-protocol", "template"],
+  "license": "ISC",
+  "engines": {
+    "node": ">=22.6.0"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.27.1",
+    "@types/node": "^24.11.0",
+    "zod": "^3.25.76"
+  }
+}
